@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TC_BMW {
+public class TC_BMW_Test {
 
 	@Test(groups = "watch")
 	public void explore() throws InterruptedException {
