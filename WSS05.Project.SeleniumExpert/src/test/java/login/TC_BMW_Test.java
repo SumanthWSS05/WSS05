@@ -10,7 +10,8 @@ public class TC_BMW_Test {
 
 	@Test(groups = "watch")
 	public void explore() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.bmw.in/en/index.html");
 		Thread.sleep(1000);
