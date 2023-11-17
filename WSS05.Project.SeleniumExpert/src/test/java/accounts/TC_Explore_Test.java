@@ -11,7 +11,8 @@ public class TC_Explore_Test {
 
 	@Test(groups = "watch")
 	public void explore() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.titan.co.in/");
 		Thread.sleep(1000);
